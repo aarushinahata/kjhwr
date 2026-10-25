@@ -73,6 +73,6 @@ import os
 from fastapi.staticfiles import StaticFiles
 
 # In Docker the built React app is copied to ./static and served from the same server.
-STATIC = pathlib.Path(os.getenv("STATIC_DIR", "static"))
+STATIC = pathlib.Path(os.getenv("STATIC_DIR", str(pathlib.Path(__file__).resolve().parents[1] / "static")))
 if STATIC.exists():
     app.mount("/", StaticFiles(directory=STATIC, html=True), name="static")
