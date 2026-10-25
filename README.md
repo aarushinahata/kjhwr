@@ -127,4 +127,4 @@ Interactive docs are at `/docs` when the server is running.
 
 ## AI usage
 
-AI tools were used to build this project. I used Claude (Anthropic) as an assistant to plan the approach, generate code and tests, and draft this README. I set up the project on my machine, downloaded the real Elexon data, inspected it, ran the tests, ran the app locally and in Docker, and checked the results against the data. Design choices such as the deadline assumption, the hourly to half-hourly handling and the asymmetric error band were discussed with the assistant and reviewed by me.
+AI tools were used to build this project. I used Claude (Anthropic) as an assistant to plan the approach, generate code, and tests. I set up the project on my machine, downloaded the real Elexon data, inspected it, ran the tests, ran the app locally and in Docker, and checked the results against the data. Design choices such as the deadline assumption, the hourly to half-hourly handling and the asymmetric error band were discussed with the assistant and reviewed by me.
